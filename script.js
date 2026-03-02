@@ -204,28 +204,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // ===== Carregar Logos de Parceiros Dinamicamente =====
-  const parceirosContainer = document.getElementById('parceiros-logos');
-
-  if (parceirosContainer) {
-    const parceirosLogos = [
-      // 'parceiro1.svg',
-      // 'parceiro2.svg',
-    ];
-
-    if (parceirosLogos.length === 0) {
-      parceirosContainer.innerHTML = '<p class="parceiros-empty">Em breve, nossos parceiros estarão aqui.</p>';
-    } else {
-      parceirosLogos.forEach(function (logo) {
-        const img = document.createElement('img');
-        img.src = 'src/parceiros/' + logo;
-        img.alt = 'Logo de parceiro';
-        img.className = 'parceiro-logo';
-        img.loading = 'lazy';
-        parceirosContainer.appendChild(img);
-      });
-    }
-  }
 });
 
 // ===== CSS para animações de entrada (injetado via JS) =====
