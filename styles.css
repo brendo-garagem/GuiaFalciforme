@@ -693,7 +693,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: var(--spacing-xl);
-    margin-top: var(--spacing-lg);
+    margin-top: 72px;
     align-items: center;
     justify-items: center;
 }
